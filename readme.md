@@ -26,6 +26,14 @@ You: python agent.py your-project "TypeError in database.py line 47"
 Agent: *scans architecture, traces error chain, deep dives flagged file*
 You: *opens AGENT_REPORT.md with exact file, exact line, exact fix*
 ```
+## Tech Stack
+
+- **Python** — core engine
+- **AST** — structural code analysis (built-in, no install needed)
+- **Groq API** — LLM inference (free tier, Llama 3.3 70B)
+- **Pathlib / os.walk** — file system crawler
+- **Subprocess** — agent orchestration
+- **Markdown** — CONTEXT.md and AGENT_REPORT.md output
 
 ---
 
@@ -169,17 +177,6 @@ architect-agent/
 When I started building multi-file Python projects, I kept hitting the same wall. I'd get an error, paste my entire codebase into an LLM, and get a generic answer that fixed the error on one line but broke something upstream. The LLM had no map of how my files connected.
 
 The real problem isn't that LLMs are bad at debugging. It's that they need architectural context, not raw code. Context Excavator gives them the map first, then the specific problem. That combination produces precise answers instead of guesses.
-
----
-
-## Tech Stack
-
-- **Python** — core engine
-- **AST** — structural code analysis (built-in, no install needed)
-- **Groq API** — LLM inference (free tier, Llama 3.3 70B)
-- **Pathlib / os.walk** — file system crawler
-- **Subprocess** — agent orchestration
-- **Markdown** — CONTEXT.md and AGENT_REPORT.md output
 
 ---
 
