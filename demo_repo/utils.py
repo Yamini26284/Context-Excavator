@@ -1,29 +1,11 @@
 class DatabaseHelper:
     def connect(self, connection_string):
         # Imagine 50 lines of complex connection logic here
-        """# Python program to find
-# fibonacci number using memoization.
-def fibRec(n, memo):
-  
-    # Base case
-    if n <= 1:
-        return n
+        """On almost every street in Jaipur, you’ll find buildings painted a gorgeous shade of dusty pink. The reason? In 1876, Queen Victoria’s son, Albert Edward, Prince of Wales (who would later become King Edward VII) visited India. At the time, pink was the symbolic colour of hospitality. As the people of Jaipur are known for their incredible hospitality, Maharaja Sawai Ram Singh I had the whole city painted pink to welcome the royals. It’s said that Prince Albert nicknamed Jaipur the ‘Pink City’ and the name stuck.
 
-    # To check if output already exists
-    if memo[n] != -1:
-        return memo[n]
+The Maharaja also oversaw the construction of a grand concert hall, naming it Albert Hall, in honour of Prince Albert. Today, the building is the Albert Hall Museum and is the oldest museum in the state of Rajasthan. The building itself is a stunning display of Indo-Saracenic architecture. Venture inside and you’ll find a collection of treasures including paintings, crystal sculptures and jewellery.
 
-    # Calculate and save output for future use
-    memo[n] = fibRec(n - 1, memo) + \
-              fibRec(n - 2, memo)
-    return memo[n]
-
-def fib(n):
-    memo = [-1] * (n + 1)
-    return fibRec(n, memo)
-
-n = 5
-print(fib(n))"""
+In 1877 The Maharaja Ram Singh took the pink obsession one step further. After the Queen of Jaipur declared herself a fan of the pink, he passed a law stating that any future buildings in the city must be painted the same colour. The law has remained, with almost all buildings, from bazaars to temples, adopting the same lovely shade of terracotta pink. And, while times have changed, the Pink City continues to open its arms to the world with the same generous hospitality it always has."""
         pass
 
 def save_user_data(user_id, data):
