@@ -1,0 +1,18 @@
+__pycache__/
+# when you run a Python script, Python doesn't just read your code; it "compiles" it into a faster format called Bytecode. It stores this Bytecode in a folder called __pycache__.
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+GROQ_API_KEY
+
+# Agent outputs (auto-generated, don't commit)
+AGENT_REPORT.md
+error.log
+
+# VS Code
+.vscode/

@@ -1,0 +1,7 @@
+{
+    "main.py": [
+        "utils"
+    ],
+    "utils.py": [],
+    "sub_logic\\database.py": []
+}
